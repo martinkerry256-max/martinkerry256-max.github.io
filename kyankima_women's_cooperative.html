@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyankima Women's Cooperative | Mukono</title>
+    <style>
+      /* CSS INLINE STYLES */
+      :root {
+        --primary-green: #2e7d32;
+        --accent-gold: #fbc02d;
+        --light-bg: #f4f7f4;
+        --dark-text: #212121;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--light-bg);
+        color: var(--dark-text);
+        line-height: 1.6;
+      }
+
+      /* Accessibility: High Contrast Header */
+      header {
+        background-color: var(--primary-green);
+        color: white;
+        padding: 20px 15px;
+        text-align: center;
+        border-bottom: 4px solid var(--accent-gold);
+      }
+
+      nav {
+        background: white;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: var(--primary-green);
+        font-weight: bold;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 15px;
+      }
+
+      .section-title {
+        color: var(--primary-green);
+        border-bottom: 2px solid var(--primary-green);
+        padding-bottom: 5px;
+        margin-top: 30px;
+      }
+
+      /* Product Grid - Mobile Optimized */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding-bottom: 10px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .card h3 {
+        font-size: 1rem;
+        margin: 10px 0 5px;
+      }
+
+      .price {
+        color: var(--primary-green);
+        font-weight: bold;
+      }
+
+      /* Health Tips Section */
+      .health-box {
+        background: #e8f5e9;
+        padding: 15px;
+        border-left: 5px solid var(--primary-green);
+        margin: 15px 0;
+      }
+
+      /* FAQ Accordion-style */
+      .faq-item {
+        background: white;
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+      }
+
+      .faq-item strong {
+        display: block;
+        color: var(--primary-green);
+      }
+
+      footer {
+        background: #333;
+        color: #ccc;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.8rem;
+        margin-top: 40px;
+      }
+
+      /* Button for simple mobile interaction */
+      .btn {
+        background: var(--primary-green);
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Kyankima Women's Cooperative</h1>
+      <p>Empowering Mukono Through Craft & Agriculture</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#health">Health</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="container">
+      <section id="about">
+        <h2 class="section-title">Our Mission</h2>
+        <p>
+          Founded in 2019, we are 47 women dedicated to community growth. Our
+          mission is to improve livelihoods through sustainable small-scale
+          farming and handcraft excellence.
+        </p>
+
+        <h2 class="section-title">Meet Our Members</h2>
+        <div class="grid">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1531123897727-8f129e16fd3c?auto=format&fit=crop&w=200&q=80"
+              alt="Nalwoga Judith"
+            />
+            <h3>Nalwoga Judith</h3>
+            <p><small>Chairperson</small></p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=200&q=80"
+              alt="Member"
+            />
+            <h3>Agnes Namatovu</h3>
+            <p><small>Lead Farmer</small></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="products">
+        <h2 class="section-title">Our Featured Products</h2>
+        <div class="grid">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1590595906931-81f04f0ccebb?auto=format&fit=crop&w=300&q=80"
+              alt="Woven Basket"
+            />
+            <h3>Handwoven Baskets</h3>
+            <p class="price">UGX 25,000</p>
+            <a href="https://wa.me/256000000000" class="btn"
+              >Order via WhatsApp</a
+            >
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1615485290382-441e4d0c9cb5?auto=format&fit=crop&w=300&q=80"
+              alt="Organic Fruits"
+            />
+            <h3>Fresh Mukono Mangoes</h3>
+            <p class="price">UGX 5,000 / kg</p>
+            <a href="https://wa.me/256000000000" class="btn"
+              >Order via WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="health">
+        <h2 class="section-title">Community Health Tips</h2>
+        <div class="health-box">
+          <p>
+            <strong>This Month's Tip:</strong> Ensure all drinking water is
+            boiled or treated. With the rainy season in Mukono, hygiene is our
+            first defense against illness.
+          </p>
+          <p><small>— Contributed by our 3 Volunteer Health Partners</small></p>
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <strong>Where are you located?</strong>
+          <span
+            >We are based in Mukono District, Uganda. Visit us at our community
+            center.</span
+          >
+        </div>
+        <div class="faq-item">
+          <strong>Do you deliver to Kampala?</strong>
+          <span
+            >Yes, we arrange deliveries via local courier services for a small
+            fee.</span
+          >
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Kyankima Women’s Cooperative</p>
+      <p>
+        Digitized through the Community ICT Grant |
+        <strong>HTTPS SECURE</strong>
+      </p>
+    </footer>
+  </body>
+</html>
